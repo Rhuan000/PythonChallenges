@@ -7,7 +7,9 @@ load_dotenv()
 APP_ID = os.getenv("HOME")
 API_KEY = os.environ.get("API_ID")
 print(API_KEY, APP_ID)
-'''exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
+
+#Interacting with google sheet using a external api, asking which exercise the user did and putting on sheet with others informations too.
+exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"
 user_answer = input('Tell me which exercises you did: ')
 params= {"query": user_answer}
 sheet_endpoint = os.environ.get("sheet_endpoint")
@@ -45,4 +47,3 @@ for exercise in data['exercises']:
     post_params['workout']['duration'] = exercise['duration_min']
     response_sheets = requests.post(url=sheet_endpoint, json=post_params, headers=header_sheet)
     print(response_sheets.text)
-'''

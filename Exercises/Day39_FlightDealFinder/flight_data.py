@@ -1,5 +1,5 @@
 class FlightData:
-    #This class is responsible for structuring the flight data.
+    '''This class is responsible for structuring the flight data.'''
     def __init__(self):
         self.departure_city_name: str
         self.departure_iataCode: str

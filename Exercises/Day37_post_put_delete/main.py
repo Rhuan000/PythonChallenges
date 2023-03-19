@@ -1,9 +1,10 @@
 import requests
 import datetime
+#Learning About post, put and delete.
 
 FINAL_GRAPHIC = "https://pixe.la/v1/users/simplestchau/graphs/graph1.html"
-USERNAME = "simplestchau"
-TOKEN = "iF9#f&Jzo6TJ#vg"
+USERNAME = ""
+TOKEN = ""
 pixela_endpoint = "https://pixe.la/v1/users"
 user_parameters = {
     "token": TOKEN,

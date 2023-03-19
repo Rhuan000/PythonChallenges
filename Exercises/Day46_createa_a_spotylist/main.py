@@ -1,12 +1,14 @@
 import pprint
+import os
 import spotipy
 import requests
 from bs4 import BeautifulSoup
 from spotipy.oauth2 import SpotifyOAuth, SpotifyClientCredentials
+
 client_id = "254310f18aac4cbbb36c393f6787fade"
-token = "BQClIduc0GPvHuQTR_Lk6W_XoxWKBksHaovMxE5A6jBHp7cRgmIRy4O-4jvrjRv-7aBFIqzFdbjDgSrFyrfh7h1pU6pxaaKnxTOJ5u6BN4ismNqwLoKhrWId0YChG6R4Quy5vjzueMNeedp9W22n5e0MRlrM5oAQ5JywzAPM8LmbObWX-r-qFoRKmfJl049K7jXyvGVENejecJUSvK-iz8DPbV870Fcl5eHoEHCX8xJgIpVCRbxYFimUjVGR_hQ9-U5tZRlk-r2LgmLjhuBnJ8KkbtO0gw"
-client_secret = "fdbc6e73c81941a4ac739f3d0a410902"
-user_id = "31hkm5aiwww3cy6bw4k5hnuznvba"
+token = os.getenv("TOKENID")
+client_secret = os.getenv("CLIENTSECRET")
+user_id = os.getenv("USERID")
 redirect_uri = "http://localhost:8888/callback"
 
 chosen_year = input("Which year do you want to travel to? Type the date in this format YYYY: ")
