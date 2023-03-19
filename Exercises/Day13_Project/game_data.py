@@ -1,3 +1,4 @@
+#We get the game questions for here.
 data = [
     {
         'name': 'Instagram',
@@ -139,7 +140,7 @@ data = [
     },
     {
         'name': 'Real Madrid CF',
-        'follower_count': 86,
+        'follower_count': 134,
         'description': 'Football club',
         'country': 'Spain'
     },

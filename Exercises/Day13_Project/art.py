@@ -1,3 +1,4 @@
+#Only Arts to utilize with the main code
 logo = """
     __  ___       __             
    / / / (_)___ _/ /_  ___  _____
